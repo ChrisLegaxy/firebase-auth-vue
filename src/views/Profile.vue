@@ -1,14 +1,23 @@
 <template>
   <div style="height: 100%">
     <v-container style="height: 100%">
-      <v-row style="height: 100%" align-center justify-center>
+      <v-row
+        style="height: 100%"
+        align-center
+        justify-center
+      >
         <v-col class="d-flex flex-column align-center justify-center">
           <div class="my-10 text-center">
             Welcome! {{ displayName }}
-            <br />
+            <br>
             Provider: {{ provider }}
           </div>
-          <v-btn color="primary" @click="signOut">Sign Out</v-btn>
+          <v-btn
+            color="primary"
+            @click="signOut"
+          >
+            Sign Out
+          </v-btn>
         </v-col>
       </v-row>
     </v-container>

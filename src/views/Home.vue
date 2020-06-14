@@ -1,10 +1,16 @@
 <template>
   <main style="height: 100%">
     <v-container style="height: 100%">
-      <v-row style="height: 100%" align="center" justify="center">
+      <v-row
+        style="height: 100%"
+        align="center"
+        justify="center"
+      >
         <v-col>
-          <div class="text-center title green--text my-7">Firebase Authentication Vue 🥳</div>
-          <div id="firebaseui-auth-container"></div>
+          <div class="text-center title green--text my-7">
+            Firebase Authentication Vue 🥳
+          </div>
+          <div id="firebaseui-auth-container" />
         </v-col>
       </v-row>
     </v-container>
@@ -26,20 +32,21 @@ export default {
           // User successfully signed in.
           // Return type determines whether we continue the redirect automatically
           // or whether we leave that to developer to handle.
-          this.$router.push('/profile');
+          this.$router.push("/profile");
           // return true;
         },
       },
+      credentialHelper: firebaseui.auth.CredentialHelper.NONE,
       signInFlow: 'popup',
       signInSuccessUrl: '/profile',
       signInOptions: [
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
         firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-        firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+        // firebase.auth.TwitterAuthProvider.PROVIDER_ID,
         firebase.auth.GithubAuthProvider.PROVIDER_ID,
         firebase.auth.EmailAuthProvider.PROVIDER_ID,
         firebase.auth.PhoneAuthProvider.PROVIDER_ID,
-        firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID,
+        // firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID,
       ],
       // tosUrl and privacyPolicyUrl accept either url string or a callback
       // function.

@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-export const firebaseConfig = {
+export default {
   apiKey: '',
   authDomain: '',
   databaseURL: '',
