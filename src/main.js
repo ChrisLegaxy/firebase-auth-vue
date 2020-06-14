@@ -5,7 +5,7 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import vuetify from './plugins/vuetify';
-import firebaseConfig from '../firebase.config';
+import firebaseConfig from '../firebase.config.main';
 
 /** Vue Variable */
 Vue.prototype.$axios = axios;
