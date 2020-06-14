@@ -6,9 +6,9 @@ This is a just small simple project to test Firebase Authentication with VueJS
 
 The project uses the following technology stack:
 
-> **JS Framework**: [VueJS](https://vuejs.org)
-> **CSS Framework**: [Vuetify](https://vuetifyjs.com)
-> **Authentication**: [Firebase Authentication](https://firebase.google.com/docs/auth)
+> **JS Framework**: [VueJS](https://vuejs.org)  
+> **CSS Framework**: [Vuetify](https://vuetifyjs.com)  
+> **Authentication**: [Firebase Authentication](https://firebase.google.com/docs/auth)  
 
 # Install, Configure & Run
 
@@ -31,11 +31,11 @@ $ npm run serve
 
 ## Author
 
-> **Vansen Hengmeanrith (Chris Legaxy/Chris Van)** 😎
-> **Contact** chris.legaxy@gmail.com | chrisvan.vshmr@gmail.com
-> **Website** https://chrisvan.netlify.app
+> **Vansen Hengmeanrith (Chris Legaxy/Chris Van)** 😎  
+> **Contact** chris.legaxy@gmail.com | chrisvan.vshmr@gmail.com  
+> **Website** https://chrisvan.netlify.app  
 
 ## License
 
-MIT License
+MIT License  
 
