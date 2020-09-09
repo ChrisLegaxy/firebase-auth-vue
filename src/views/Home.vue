@@ -28,19 +28,28 @@ export default {
   mounted() {
     const uiConfig = {
       callbacks: {
-        signInSuccessWithAuthResult: function(authResult, redirectUrl) {
+        signInSuccessWithAuthResult: function (authResult, redirectUrl) {
           // User successfully signed in.
           // Return type determines whether we continue the redirect automatically
           // or whether we leave that to developer to handle.
-          this.$router.push("/profile");
+          this.$router.push('/profile');
           // return true;
         },
       },
-      credentialHelper: firebaseui.auth.CredentialHelper.NONE,
+      // credentialHelper: firebaseui.auth.CredentialHelper.NONE,
       signInFlow: 'popup',
       signInSuccessUrl: '/profile',
       signInOptions: [
-        firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+        {
+          provider: firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+
+          customParameters: {
+            // Forces account selection even when one account
+            // is available.
+            prompt: 'select_account',
+          },
+        },
+
         firebase.auth.FacebookAuthProvider.PROVIDER_ID,
         // firebase.auth.TwitterAuthProvider.PROVIDER_ID,
         firebase.auth.GithubAuthProvider.PROVIDER_ID,

@@ -36,6 +36,8 @@ export default {
   },
   created() {
     firebase.auth().onAuthStateChanged((user) => {
+      console.log(user);
+      console.log(user.getIdToken());
       this.displayName = user.displayName;
       this.provider = user.providerData[0].providerId;
     });
